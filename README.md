@@ -1,7 +1,7 @@
 # FortPix
 
 Raster image operations in Fortran for photo editing.
-[Source](https://code.tugraz.at/yard/fortpix).
+[Source](https://github.com/lazy-fortran/fortpix).
 
 Images are `integer(int8)` arrays `(3, width, height)` of sRGB bytes. Masks are
 `real` arrays `(width, height)` of coverage from 0 to 1, with pixel `(i, j)`
@@ -17,7 +17,7 @@ covering `[i-1, i] x [j-1, j]`.
 
 The library has no dependencies and builds with gfortran and LFortran, natively
 and for WebAssembly. Loops are parallel with OpenMP when enabled. File formats
-belong to [FortImg](https://code.tugraz.at/yard/fortimg).
+belong to [FortImg](https://github.com/lazy-fortran/fortimg).
 
 ```sh
 fo test        # or: fpm test
